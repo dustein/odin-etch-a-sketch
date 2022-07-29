@@ -5,7 +5,6 @@ for(i=1; i<=16; i++) {
   let square = document.createElement('div')
   square.setAttribute('class', 'coluna')
   square.setAttribute('id', `coluna${i}`)
-  square.innerText = i
   gameArea.appendChild(square)
   let coluna = document.querySelector(`#coluna${i}`)
   for(e=1; e<=16; e++) {
@@ -16,3 +15,10 @@ for(i=1; i<=16; i++) {
     coluna.appendChild(square)
   }
 }
+
+const quadrados = document.querySelectorAll('.linha');
+quadrados.forEach(quadrado => {
+  quadrado.addEventListener('mouseover', () => {
+    quadrado.setAttribute('style', 'background-color: red;')
+  })
+})
