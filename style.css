@@ -1,0 +1,18 @@
+
+#gameArea {
+  display: flex;
+}
+.linha {
+  border: solid;
+  height: 10px;
+  width: 10px;
+  font-size: 10px;
+  margin: 0.5px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.linha:hover {
+  background-color: blueviolet;
+}
+
