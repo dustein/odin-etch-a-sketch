@@ -1,7 +1,9 @@
 const gameArea = document.querySelector('#gameArea')
 const btnDimension = document.querySelector('#dimension')
 const btnClear = document.querySelector('#clear')
-let size = 6;
+
+let size = Number(window.prompt('Informe número de quadros de 1 a 100'));
+
 for(i=1; i<=size; i++) {
   let square = document.createElement('div')
   square.setAttribute('class', 'coluna')

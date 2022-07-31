@@ -18,17 +18,17 @@
 }
 #gameArea {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-grow: 1;
   width: 500px;
   height: 500px;
   background-color: black;
   padding-top: 2rem;
 }
 .linha {
-  border: solid;
-
-  font-size: 10px;
-  margin: 1px;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0.5px;
   text-align: center;
   background-color: aquamarine;
 }
